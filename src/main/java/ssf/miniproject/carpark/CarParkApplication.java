@@ -1,13 +1,13 @@
-package ssf.miniproject.map;
+package ssf.miniproject.carpark;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MapApplication {
+public class CarParkApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MapApplication.class, args);
+		SpringApplication.run(CarParkApplication.class, args);
 	}
 
 }
