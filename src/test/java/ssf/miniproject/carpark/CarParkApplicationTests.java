@@ -1,4 +1,4 @@
-package ssf.miniproject.gmap;
+package ssf.miniproject.carpark;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
