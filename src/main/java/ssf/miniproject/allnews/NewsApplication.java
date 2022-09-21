@@ -1,13 +1,13 @@
-package ssf.miniproject.carpark;
+package ssf.miniproject.allnews;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CarparkApplication {
+public class NewsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CarparkApplication.class, args);
+		SpringApplication.run(NewsApplication.class, args);
 	}
 
 }

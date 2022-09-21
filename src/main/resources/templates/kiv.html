@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Search All News</title>
 </head>
 <body>
-    <div>
-    <form method="GET" action="/newslist">       
+    
+    <form method="POST" action="/search">       
         <table>
              <td>
+            <input type="text" name="name" placeholder="Username" size="20" required>
             <input type="text" name="q" placeholder="Search news here" size="20" required>        
         </td>
         <td>
-            <button class="btn btn-primary" type="submit">Search</button>
+            <button class="btn btn-primary" type="submit">Create</button>
         </td>
         </table>  
 </form>
-</div>
-    
+
 </body>
 </html>
