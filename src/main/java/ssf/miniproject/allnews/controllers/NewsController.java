@@ -63,10 +63,10 @@ public class NewsController {
         System.out.println(">>>>>>" + allNews.toString());
 
         //kiv below
-        // String name = (String) session.getAttribute("name");
-        // session.setAttribute("name", name);
-        model.addAttribute("articles", q);
-        // model.addAttribute("name", name);
+        String name = (String) session.getAttribute("name");
+       // session.setAttribute("name", name);
+        //model.addAttribute("articles", q);
+        //model.addAttribute("name", name);
         // model.addAttribute("size", size);
         model.addAttribute("allNews", allNews);
 

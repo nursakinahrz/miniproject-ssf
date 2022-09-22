@@ -32,6 +32,7 @@
       </nav>
 
 
+
     <div class="card mb-3">
         <span data-th-each="a :${allNews}" class="allNews">
 
@@ -39,13 +40,18 @@
         <div class="card-body">
           <h5 data-th-text="${a.title}" class="card-title">Card title</h5>
           <p data-th-text="${a.description}" class="card-text"></p>
+          
           Author:<p data-th-text="${a.author}" class="card-text"><small class="text-muted"></small></p>
           <a data-th-href="${a.url}" class="card-text">Link to news</a>
+          </form>
+          
+
         </div>
       </div>
     
+    
 
-      
+     
 
     
     
