@@ -106,7 +106,9 @@ public class NewsService {
         }
     }
 
-
+    // public Optional<News> get(String authorName) {
+	// 	return newsRepo.get(authorName);
+	// }
 }
 
     

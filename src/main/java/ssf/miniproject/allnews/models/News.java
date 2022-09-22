@@ -9,22 +9,30 @@ import jakarta.json.JsonReader;
 public class News {
     
     private String title;
-    private String description;
+    private String author;
     private String url;
     private String urlToImage;
     private String content;
+    private String description;
+   
 
+    public String getDescription() {
+        return description;
+    }
+    public void setDescription(String description) {
+        this.description = description;
+    }
     public String getTitle() {
         return title;
     }
     public void setTitle(String title) {
         this.title = title;
     }
-    public String getDescription() {
-        return description;
+    public String getAuthor() {
+        return author;
     }
-    public void setDescription(String description) {
-        this.description = description;
+    public void setAuthor(String author) {
+        this.author = author;
     }
     public String getUrl() {
         return url;
@@ -48,10 +56,11 @@ public class News {
     public static News create(JsonObject json) {
 		final News n = new News();
 		n.setTitle(json.getString("title"));
-        n.setDescription(json.getString("description"));
+        n.setAuthor(json.getString("author"));
         n.setUrl(json.getString("url"));
         n.setUrlToImage(json.getString("urlToImage"));
         n.setContent(json.getString("content"));
+        n.setDescription(json.getString("description"));
 		return n;
 	}
 
@@ -65,17 +74,18 @@ public class News {
 	public JsonObject toJson() {
 		return Json.createObjectBuilder()
 			.add("title", this.title)
-			.add("description", this.description)
+			.add("author", this.author)
 			.add("url", this.url)
 			.add("urlToImage", this.urlToImage)
 			.add("content", this.content)
+            .add("description", this.description)
 			.build();
 	}
 
 	@Override
     public String toString() {
-        return "News [content=" + content + ", description=" + description + ", title=" + title + ", url=" + url
-                + ", urlToImage=" + urlToImage + "]";
+        return "News [author=" + author + ", content=" + content + ", description=" + description + ", title=" + title
+                + ", url=" + url + ", urlToImage=" + urlToImage + "]";
     }
 
 }
